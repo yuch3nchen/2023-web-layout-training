@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  //   outline: 1px solid;
+}
+html,
+body {
+  font-family: "Castoro", serif;
+  color: $black;
+  line-height: 1.5;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: $black;
+  &:hover {
+    text-decoration: underline;
+    font-style: italic;
+  }
+}
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+.wrap {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+header {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.profile {
+  font-size: $fs-1;
+}
+footer {
+  padding: 4rem 0;
+}
+.link {
+  text-align: center;
+  li {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+  }
+  img {
+    max-width: 4rem;
+  }
+}

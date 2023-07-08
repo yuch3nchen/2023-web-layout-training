@@ -1,0 +1,40 @@
+@import "reset";
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.py-48 {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}

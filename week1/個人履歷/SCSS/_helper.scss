@@ -1,0 +1,17 @@
+.title {
+  font-size: $fs-h2;
+  color: $red;
+  border-bottom: 3px solid $red;
+  margin-top: 2.5rem;
+}
+.subtitle {
+  font-size: $fs-3;
+  color: $gray;
+  font-style: italic;
+}
+.details {
+  font-size: $fs-2;
+  li {
+    margin-top: 1rem;
+  }
+}
