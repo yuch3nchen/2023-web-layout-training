@@ -33,21 +33,20 @@ header {
     margin: 0 auto;
   }
 }
-.profile {
-  font-size: $fs-1;
+.contact {
+  .details {
+    li:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+.awards {
+  .details {
+    li:not(:last-child) {
+      margin-bottom: 0.75rem;
+    }
+  }
 }
 footer {
   padding: 4rem 0;
-}
-.link {
-  text-align: center;
-  li {
-    display: inline-block;
-    &:not(:last-child) {
-      margin-right: 2.5rem;
-    }
-  }
-  img {
-    max-width: 4rem;
-  }
 }
