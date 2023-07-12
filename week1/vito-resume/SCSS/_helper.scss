@@ -32,5 +32,9 @@
   }
   img {
     max-width: 4rem;
+    transition: transform 1s ease-out;
+    &:hover {
+      transform: rotate(360deg);
+    }
   }
 }

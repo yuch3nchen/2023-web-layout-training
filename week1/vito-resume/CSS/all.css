@@ -174,10 +174,16 @@ img {
 }
 .link img {
   max-width: 4rem;
+  transition: transform 1s ease-out;
+}
+.link img:hover {
+  transform: rotate(360deg);
 }
 
 .headline {
   font-size: 8rem;
+  letter-spacing: 0.12em;
+  width: 636px;
 }
 
 .section {
