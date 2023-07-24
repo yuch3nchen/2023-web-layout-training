@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap"); /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.bg-theme {
+  background-color: #aa0601;
+}
+
+.logo {
+  display: block;
+  background-image: url(../IMAGE/logo-white-min.png);
+  width: 80px;
+  height: 49px;
+  background-size: contain;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.nav-list {
+  flex-wrap: wrap;
+}
+.nav-list a {
+  font-size: 1.25rem;
+  display: block;
+}
+.nav-list a:hover {
+  background-color: white;
+  color: #aa0601;
+}
+
+.links img {
+  width: 3rem;
+  transition: all 1.5s ease;
+}
+.links img:hover {
+  transform: rotate(360deg);
+}
+.links li:not(:first-child) {
+  margin-left: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  color: white;
+}
+
+nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+nav li:not(:first-child) {
+  margin-left: 4rem;
+}
+
+@media (max-width: 767px) {
+  nav {
+    padding: 0;
+    flex-direction: column;
+  }
+  nav .logo {
+    margin: 1rem;
+  }
+  nav .nav-list li {
+    width: 50%;
+    margin: 0;
+    border: 1px solid white;
+  }
+  nav .nav-list a {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+.footer {
+  flex-wrap: wrap;
+}
+.footer-nav {
+  padding: 3rem 0 2rem 0;
+}
+.footer-nav a {
+  display: block;
+}
+.footer-nav .nav-list a {
+  font-size: 1rem;
+}
+.footer-nav .nav-list li:not(:first-child) {
+  margin-left: 3rem;
+}
+.footer-contact {
+  margin-bottom: 2rem;
+}
+.footer-contact h3 {
+  font-size: 2.25rem;
+}
+.footer-contact h3:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.footer-contact span {
+  font-size: 2.25rem;
+  margin-right: 20px;
+}
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+.footer-bottom {
+  padding: 2rem 0;
+  border-top: 1px solid white;
+}
+.footer-bottom a {
+  font-size: 14px;
+  display: block;
+}
+.footer-bottom a:hover {
+  text-decoration: underline;
+  background-color: transparent;
+  color: white;
+}
+.footer-bottom li:not(:first-child) {
+  margin-left: 3rem;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .footer .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .footer-contact {
+    margin-top: -1.5rem;
+  }
+  .footer-contact h3 {
+    font-size: 1rem;
+  }
+  .footer-contact span {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .footer-nav {
+    padding: 0;
+    justify-content: end;
+  }
+  .footer-nav .nav-list {
+    display: none;
+  }
+  .footer-nav .links img {
+    width: 24px;
+  }
+  .footer-nav .links li:not(:first-child) {
+    margin-left: 0.5rem;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    padding: 1rem 0 0 0;
+  }
+  .footer-bottom .nav-list li {
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+  }
+}/*# sourceMappingURL=all.css.map */

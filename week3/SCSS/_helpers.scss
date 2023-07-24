@@ -1,0 +1,33 @@
+.logo {
+  display: block;
+  background-image: url(../IMAGE/logo-white-min.png);
+  width: 80px;
+  height: 49px;
+  background-size: contain;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.nav-list {
+  flex-wrap: wrap;
+  a {
+    font-size: 1.25rem;
+    display: block;
+    &:hover {
+      background-color: white;
+      color: $red;
+    }
+  }
+}
+.links {
+  img {
+    width: 3rem;
+    transition: all 1.5s ease;
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+  li:not(:first-child) {
+    margin-left: 2rem;
+  }
+}
