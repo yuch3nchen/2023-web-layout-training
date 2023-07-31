@@ -1,0 +1,122 @@
+//container width : 1296px(86*12+24*11)
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  // outline: 1px solid black;
+}
+
+html,
+body {
+  font-family: "Bruno Ace SC", cursive;
+  color: $white;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: $white;
+}
+h1 {
+  font-size: $fs-h1;
+}
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+nav {
+  a {
+    display: block;
+    max-width: 306px;
+    color: $gray;
+    &:hover {
+      text-decoration: underline;
+      color: $green;
+    }
+  }
+}
+
+.header {
+  &-content {
+    flex-direction: column;
+    h2 {
+      font-size: 4rem;
+    }
+    a {
+      align-self: flex-end;
+    }
+  }
+}
+
+.introduction {
+  &-content {
+    width: 526px;
+    p {
+      font-size: $fs-2;
+    }
+  }
+  &-img {
+    width: 746px;
+  }
+}
+.deco {
+  width: 128px;
+}
+
+.about {
+  color: $black;
+  &-card {
+    width: 636px;
+  }
+  &-content {
+    width: 526px;
+    p {
+      font-size: $fs-2;
+    }
+  }
+}
+
+.contact {
+  &-title {
+    margin-bottom: 0;
+    span {
+      font-size: 100px;
+      margin-left: 1rem;
+    }
+  }
+  &-link {
+    img {
+      width: 162px;
+      border-radius: 2.5rem;
+      box-shadow: 0px 4px 4px 0px #00000040;
+      transition: all 0.5s ease-out;
+      &:hover {
+        box-shadow: 0px 0px 16px 3px #9094ffe5;
+      }
+    }
+    li:not(:first-child) {
+      margin-left: 1.25rem;
+    }
+  }
+}
+
+.project {
+  color: $black;
+  &-title {
+    margin-bottom: 1rem;
+    width: 746px;
+  }
+  &-content {
+    flex-direction: column;
+    a {
+      align-self: flex-start;
+    }
+  }
+}
+
+footer {
+  a:hover {
+    color: $green;
+    text-decoration: underline;
+  }
+}
